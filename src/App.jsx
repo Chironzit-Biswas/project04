@@ -7,6 +7,7 @@ import {Support} from "./components/pages/Support.jsx";
 import {Footer} from "./components/pages/Footer.jsx";
 
 
+
 function App() {
 
   return (
