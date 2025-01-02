@@ -1,7 +1,7 @@
 
 import { MdMenu } from "react-icons/md";
 import {useState} from "react";
-
+import {Link} from "react-router-dom";
 
 
 export const NavBar = () => {
@@ -37,7 +37,7 @@ export const NavBar = () => {
                               navlitem.map((nav) => {
                                   return (
                                       <div key={nav.id}>
-                                          <a className={'font-semibold border-white hover:border-b-[2px] '}  href={nav.path}>{nav.name}</a>
+                                          <Link  className={'font-semibold border-white hover:border-b-[2px] '}  to={nav.path}>{nav.name}</Link>
                                       </div>
                                   )
                               })
